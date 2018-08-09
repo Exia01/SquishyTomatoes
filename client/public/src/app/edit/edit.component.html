@@ -1,0 +1,7 @@
+
+<form (submit)="update()" *ngIf="restaurant">
+  {{ restaurant | json }}
+    <input name="restaurant.name" [(ngModel)]="restaurant.name" />
+    <input name="restaurant.cuisine" [(ngModel)]="restaurant.cuisine" />
+    <input type="submit" value="Update Restaurant" />
+</form>

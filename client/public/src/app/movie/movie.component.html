@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="jumbotron" *ngIf="movie">
+    <h1>Squishy Tomatoes</h1>
+    <h4>Reviews for {{movie.name}}</h4>
+    <button class="btn badge-info btn-sm" [routerLink]="['/movies']">Go Back</button>
+    <table *ngIf="movie.reviews" class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Reviewer:</th>
+          <th scope="col">Stars:</th>
+          <th scope="col">Reviews</th>
+        </tr>
+      </thead>
+
+      <tr *ngFor="let review of movie.reviews">
+        <td>{{ review.reviewer_name }}</td>
+        <td>{{ review.rating }}</td>
+        <td>{{ review.review }}</td>
+      </tr>
+    </table>
+    <button class="btn badge-danger btn-sm" (click)="destroy(movie)">Delete</button>
+  </div>
+</div>

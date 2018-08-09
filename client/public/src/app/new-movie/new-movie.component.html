@@ -1,0 +1,39 @@
+<div class="container">
+  <div class="jumbotron">
+
+    <h1>Squishy Tomatoes</h1>
+    <h3>Submit a movie and your review</h3>
+    <div *ngFor="let error of errors">
+      <p class="red">{{error}}</p>
+    </div>
+    <form class="form-group" (submit)="create()">
+
+      Movie Title:
+      <input class="form-control" name="movie.title" [(ngModel)]="movie.title" minlength="3" required #title="ngModel" />
+      <p *ngIf="!title.valid && title.dirty" class="red">Title must be 3 characters</p>
+      <br>
+
+
+      <p>Your name:
+        <input class="form-control" name="newReview.reviewer_name" [(ngModel)]="newReview.reviewer_name" minlength="3" required #reviewer="ngModel"
+        />
+      </p>
+      <p *ngIf="!reviewer.valid && reviewer.dirty" class="red">A name is required. Minimun of 3 characters</p>
+
+      <p>(Rating) Stars:
+        <input type="number" min="0" max="5" step="" required class="form-control" name="newReview.rating" [(ngModel)]="newReview.rating"
+        />
+      </p>
+
+      <p>Review:
+        <input class="form-control" name="newReview.review" [(ngModel)]="newReview.review" minlength="3" required #review="ngModel"
+        />
+      </p>
+      <p *ngIf="!review.valid && review.dirty" class="red">A Review is required. Minimun of 10 characters</p>
+
+      <input class="btn btn-primary btn-sm" type="submit" value="Submit" />
+    </form>
+    
+    <button class="btn badge-info btn-sm" [routerLink]="['/movies']">Go Back</button>
+  </div>
+</div>
