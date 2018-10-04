@@ -1,20 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
 * {
   margin: 0 auto;
 }
-div {
-  border-radius: 5%;
-  width: 75%;
-}
-div {
-  text-align: center;
-}
-.jumbotron{
-    background-color: rgb(165, 166, 167);
-}
-.badge{
+
+/* .container {
+  background-color: grey
+} */
+
+.badge {
   color: black
 }
+
 .badge-success {
   color: #020202;
   background-color: #28a745;

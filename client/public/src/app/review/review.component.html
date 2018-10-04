@@ -1,6 +1,5 @@
-<div class="container">
-  <div class="jumbotron">
-    <h1>Squishy Tomatoes </h1>
+
+    <!-- <h1>Squishy Tomatoes </h1> -->
     <h4 *ngIf="movie">Write a review for: <h3>{{movie.title}}</h3></h4>
 
     <div *ngFor="let error of errors">
@@ -26,5 +25,3 @@
       <input class="btn btn-primary btn-sm" type="submit" value="Submit Review" />
     </form>
     <button class="btn badge-info btn-sm" [routerLink]="['/movies']">Go Back</button>
-  </div>
-</div>
