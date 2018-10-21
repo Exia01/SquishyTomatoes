@@ -22,7 +22,7 @@ export class MovieComponent implements OnInit {
     this.route.params.subscribe(params => {
       this.movieService.findById(params.id, data => {
         this.movie = data;
-        // console.log(this.movie);
+        console.log(this.movie);
       });
     });
   }

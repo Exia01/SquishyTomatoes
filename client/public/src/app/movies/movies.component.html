@@ -1,21 +1,22 @@
-<!-- <h1>Squishy Tomatoes</h1> -->
-<a [routerLink]="['new']" class="btn btn-info">Add a new movie</a>
-<br>
-<br>
-<h4>Movie List</h4>
-<table class="table table-striped" *ngIf="movies">
-  <thead>
-    <tr>
-      <th scope="col">Movie Title</th>
-      <th scope="col">Available Actions</th>
+<h3>Movie List</h3>
+<div class="movie-list" *ngIf="movies">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Movie Title</th>
+        <th class="options">Available Actions</th>
+      </tr>
+    </thead>
+    <tr *ngFor="let movie of movies">
+      <td>{{ movie.title }}</td>
+      <td class="options">
+        <button class="btn badge-primary btn-sm" [routerLink]="[ movie._id ]">Read Reviews</button> |
+        <button class="btn badge-dark btn-sm" [routerLink]="[movie._id, 'review']">New Review</button>
+      </td>
     </tr>
-  </thead>
-  <tr *ngFor="let movie of movies">
-    <td>{{ movie.title }}</td>
-    <td>
-      <button class="btn badge-success btn-sm" [routerLink]="[ movie._id ]">Read Reviews</button> |
-      <button class="btn badge-info btn-sm" [routerLink]="[movie._id, 'review']">New Review</button>
-    </td>
-  </tr>
-</table>
+  </table>
+  <div class="test">
+    <a [routerLink]="['new']" class="btn btn-dark">Add a new movie</a>
+  </div>
+</div>
 <router-outlet></router-outlet>

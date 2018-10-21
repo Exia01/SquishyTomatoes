@@ -1,7 +1,7 @@
   <div class="movie-info" *ngIf="movie">
     <!-- <h1>Squishy Tomatoes</h1> -->
-    <h4>Reviews for {{movie.name}}</h4>
-    <button class="btn badge-info btn-sm" [routerLink]="['/movies']">Go Back</button>
+    <h3>Reviews for {{movie.title}}</h3>
+    
     <table *ngIf="movie.reviews" class="table table-striped">
       <thead>
         <tr>
