@@ -1,20 +1,22 @@
-/* You can add global styles to this file, and also import other style files */
-* {
-  margin: 0 auto;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-image: url("./assets/mainWallpaper.png");
+  /* Add the blur effect */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top-center;
+  width: 900px;
+  padding: 10px;
+  margin: auto;
+  height: auto;
 }
-div {
-  border-radius: 5%;
-  width: 75%;
-}
-div {
-  text-align: center;
-}
-.jumbotron{
-    background-color: rgb(165, 166, 167);
-}
-.badge{
+
+
+.badge {
   color: black
 }
+
 .badge-success {
   color: #020202;
   background-color: #28a745;

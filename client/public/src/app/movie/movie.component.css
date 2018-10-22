@@ -1,0 +1,12 @@
+h3 {
+  font-weight: 600;
+}
+
+.info {
+  text-align: center;
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: #8b000d;
+}

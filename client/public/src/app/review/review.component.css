@@ -2,6 +2,9 @@
   color: rgb(165, 15, 15);
 }
 
+h3{
+  font-weight: 600;
+}
 
 input:invalid+span:after {
   content: '✖';
@@ -11,4 +14,10 @@ input:invalid+span:after {
 input:valid+span:after {
   content: '✓';
   padding-left: 5px;
+}
+.form-group{
+  width: 75%;
+}
+.form-control{
+  margin: 1%;
 }

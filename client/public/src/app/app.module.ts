@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { EditComponent } from './edit/edit.component';
-import { DetailComponent } from './detail/detail.component';
 import { ReviewComponent } from './review/review.component';
 import { NewMovieComponent } from './new-movie/new-movie.component';
 import { MovieComponent } from './movie/movie.component';
@@ -21,7 +20,6 @@ import { MovieService } from './movie.service';
   declarations: [
     AppComponent,
     EditComponent,
-    DetailComponent,
     ReviewComponent,
     NewMovieComponent,
     MovieComponent,
