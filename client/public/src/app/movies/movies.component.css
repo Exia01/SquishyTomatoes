@@ -4,20 +4,23 @@
 }
 
 
-.options{
+.options {
   text-align: center;
 }
-table tr{
-    justify-content: space-between;
-}
+
 
 .movie-list a {
   width: 18%;
 }
-h3{
+
+h3 {
   font-weight: 600;
 }
-/* .test{
-  display: flex;
-  justify-content:flex-end;
-} */
+
+.test {
+  width: 65%;
+}
+
+.badge-primary {
+  background-color: rgb(1, 91, 225);
+}

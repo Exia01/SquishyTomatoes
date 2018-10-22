@@ -1,3 +1,20 @@
 .red {
-  color: rgb(165, 15, 15);
+  color: darkred;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+form {
+  width: 75%;
+}
+
+.form-control{
+  margin: 1%;
+}
+
+.badge-primary {
+  color: #fff;
+  background-color: rgb(1, 91, 225);
 }
